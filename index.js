@@ -256,3 +256,23 @@ whatCentury(year2);
 whatCentury(year3);
 whatCentury(year4);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const mixedData = [1,2,'aasf','1','123',123];
+const mixedData2 = [1,'a','b',0,15];
+const mixedData3 = [1,2,'a','b'];
+
+function filter_list(arr) {
+  const newArray = [];
+  arr.forEach(function(item){
+    if(typeof item === 'number'){
+      newArray.push(item);
+    }
+  });
+  console.log(newArray);
+  // return newArray;
+}
+
+filter_list(mixedData);
+filter_list(mixedData2);
+filter_list(mixedData3);
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
